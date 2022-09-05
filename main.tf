@@ -14,7 +14,7 @@ data "nutanix_subnet" "subnet" {
   subnet_name = var.subnet_name
 }
 
-variable "image_name_webserver" {
+variable "image_name" {
     type = string
     default = "ubuntu_final"
   
