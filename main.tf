@@ -34,12 +34,6 @@ provider "nutanix" {
   wait_timeout = 60
 }
 
-resource "nutanix_image" "image" {
-  name        = "Arch Linux"
-  description = "Arch-Linux-x86_64-basic-20210401.18564"
-  source_uri  = "https://mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-basic-20210415.20050.qcow2"
-}
-
 resource "nutanix_virtual_machine" "vm" {
   name                 = "MyVM from the Terraform Nutanix Provider"
   cluster_uuid         = data.nutanix_cluster.cluster.id
