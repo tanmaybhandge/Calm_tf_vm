@@ -44,7 +44,7 @@ resource "nutanix_virtual_machine" "vm" {
   disk_list {
     data_source_reference = {
       kind = "image"
-      uuid = nutanix_image.image.id
+      uuid = nutanix_image.image_name.id
     }
   }
 
