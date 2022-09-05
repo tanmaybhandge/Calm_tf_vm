@@ -23,7 +23,7 @@ variable "image_name_webserver" {
 ## Web Server Fetching the image information ##
 
 data "nutanix_image" "image_info_webserver" {
-  image_name_webserver = var.image_name_webserver
+  image_name = var.image_name_webserver
 }
 
 provider "nutanix" {
