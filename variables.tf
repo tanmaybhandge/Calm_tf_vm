@@ -16,4 +16,5 @@ variable "user" {
 
 variable "image_name" {
   type = string
+  default = "ubuntu_final"
 }
