@@ -40,13 +40,7 @@ resource "nutanix_virtual_machine" "vm" {
   num_sockets          = "1"
   memory_size_mib      = 1024
 
-  disk_list {
-    data_source_reference = {
-      kind = "image"
-      uuid = nutanix_image.image_info_webserver.id
-    }
-  }
-
+  
   disk_list {
     data_source_reference = {
       kind = "image"
